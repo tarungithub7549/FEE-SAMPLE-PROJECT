@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ----------------------------------------------- */
+/* share buttons */
+
+.sh-bt-container{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px  rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sh-bt-container a i{
+    font-size: 32px;
+}
+.sh-bt-container a{
+    margin: 12px 0;
+    transition: 550ms;
+}
+.sh-bt-container a:hover{
+    transform: scale(1.2);
+}
+
+/* ------------------------------------------------- */
+/* share button coloring */
+.sh-bt-container .fa-facebook{
+    color: #1877f2;
+}
+.sh-bt-container .fa-twitter{
+    color: #1da1f2;
+}
+.sh-bt-container .fa-pinterest{
+    color: #e60023;
+}
+.sh-bt-container .fa-linkedin{
+    color: #004182;
+}
+.sh-bt-container .fa-whatsapp{
+    color: #075e54;
+}
+
+/* ------------------------------------------------- */
+/* media quirries */
+
+@media (max-width:550px) {
+    .content{
+        padding: 8px 32px;
+    }
+    .sh-bt-container{
+        transform: unset;
+        top: unset;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+        box-shadow: 0 4px 8px  rgba(0,0,0,0.3);
+        padding: 16px 0;
+        justify-content: center;
+    }
+    .sh-bt-container a {
+        margin: 0 32px;
+    }
+}
+
+/* ------------------------------------------------- */
+/* header */
+
+.banner{
+    
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("2nd.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin: 80px;
+}
+.content p{
+    font-size: 20px;
+    margin: 50px;
+
+}
+.content2{
+    padding: 7%;  
+}
+.content2 h2{
+    padding: 2%;
+    font-size: 50px;
+}
+.content2 p{
+    font-size: 30px;
+
+}
+
+/* ------------------------------------------------- */
+/* automatic popup  */
+.popup2 {
+    display: none;
+    background-color: #ffffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin: 12px; /* Fixed incorrect margin value */
+    border: 0.1px solid #000; /* Add black border */
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+.popup2 button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup2 p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+}
+.popup2 a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: #e52c0f;
+    color: #ffffffff;
+    text-decoration: none;
+    padding: 6px 0;
+}
+/* ------------------------------------------------ */
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: xx-large;
+    
+}
+footer h4{
+    font-size: medium;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-weight: 600; 
+    
+}
+footer p {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.471);
+    padding: 0 10px 0 10px;
+}
+.icons .fa{
+    color: rgb(80, 80, 172);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 15px;
+}
+.icons a {
+    text-decoration: none;
+}
